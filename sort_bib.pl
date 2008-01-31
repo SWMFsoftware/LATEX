@@ -5,8 +5,10 @@
 
 use strict;
 my $text = join('',<>);
-my @text = split(/\n\@(article.*|book.*|incollection.*|techreport.*)/i, $text);
-my $intro = shift @text;
+my @text = 
+    split(/\n *\@(article.*|book.*|incollection.*|techreport.*|unpublished.*)/i,
+	  $text);
+my $intro= shift @text;
 my %text = @text;
 my @keys = keys %text;
 my @sorted = 
@@ -14,7 +16,12 @@ my @sorted =
 
 print $intro;
 my $key;
-foreach $key (@sorted){ print "\n\@",$key,$text{$key} }
+foreach $key (@sorted){
+    my $cite = $key;
+    $cite =~ s/(.*\{)//;
+    my $pub = lc($1);
+    print "\n\@",$pub,$cite,$text{$key};
+}
 
 #print "text=$text";
 #print "intro=$intro\n";
