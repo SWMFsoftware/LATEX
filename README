@@ -1,0 +1,23 @@
+This repository was created to share and merge existing LaTex related files.
+
+In particular it would be valuable to have an ever growing and up-to-date
+BibTex file shared by the CSEM group. It should be fairly easy to add 
+new entries to csem.bib (simply follow the pattern, and keep the alphabetic
+ordering).
+
+It is also quite easy to merge in a whole BibTex file. 
+As long as the file is in the same format, the procedure is roughly:
+
+1. emacs NEW.bib                              # get rid of stuff before the 
+                                              # first @item in the new bib file
+                                              # Correct errors/format etc.
+2. sort_bib.pl csem.bib NEW.bib > csemnew.bib
+3. tkdiff csem.bib csemnew.bib                # Check if the merge worked. 
+                                              # If not go back to step 1.
+4. mv csemnew.bib csem.bib                    # Replace old bib file
+5. cvs commit csem.bib                        # Commit merged bib file
+
+Step 3 is very essential to make sure that the merge was successful. 
+The assumption is that if there is any overlap between the original csem.bib
+and NEW.bib then the NEW.bib file has the better/more up-to-date information. 
+If this is not the case, remove the overlapping items from NEW.bib
