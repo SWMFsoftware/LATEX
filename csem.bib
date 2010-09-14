@@ -64,6 +64,14 @@
 @string{SSR				=	"Space Sci. Rev."}
 @string{WILEY			=	"John Wiley \& Sons"}
 
+@article{CHOMBO,
+  title = "Chombo library at {\tt http://seesar.lbl.gov/ANAG/chombo/}"
+}
+
+@article{SAMRAI,
+  title = "Structured Adaptive Mesh Refinement Application Infrastructure (SAMRAI), 
+           at https://computation.llnl.gov/casc/SAMRAI/"
+}
 
 @article{Abarbanel:1993,
 		  AUTHOR = {H.D.I. Abarbanel and 
@@ -2311,6 +2319,17 @@ with {J}upiter",
   school = "University of Michigan",
   adderss = "Ann Arbor",
   year = 1996}
+
+@inproceedings{Brown:1999overture,
+  author = "D. L. Brown and W. D. Henshaw and D. J. Quinlan",
+  title  = "Overture: an object-oriented framework for solving partial differential 
+            equations on overlapping grids",
+  booktitle = "SIAM Conference on Object Oriented Methods for Scientific Computing",
+  publisher = "SIAM",
+  address   = "Philadelphia, PA",
+  year      = 1999,
+  pages     = "177-184"
+}
 
 @inproceedings{Browne:1996,
   author = "J. C. Browne and D. Banerjee",
@@ -5155,6 +5174,15 @@ as observed by {IMP} 6",
   pages = {273--295},
   year = 1991}
 
+@article{Eisenstat:1981,
+  author = "S. C. Eisenstat",
+  title  = "Efficient Implementation of a Class of Preconditioned
+            Conjugate Gradient Methods",
+  journal = "SIAM J. Sci. Stat. Comput.",
+  volume  = 2,
+  pages   = "1--4",
+  year    = 1981}
+
 @article{Elkington:1999,
   author = "Elkington, S. R. and M. K. Hudson and A. A. Chan", 
   title = "Acceleration of relativistic electrons via drift-resonant interaction with toroidal-mode {Pc-5 ULF} Oscillations",
@@ -7762,9 +7790,8 @@ condition in global magnetohydrodynamic simulations},
   YEAR = {1995}}
 
 @article{Goodrich:1998,
-  author = "Goodrich, C. C. and J. G. Lyon and M. Wiltberger and R. E. 
-Lopez and K.
-  Papadopoulos",
+  author = "C. C. Goodrich and J. G. Lyon and M. Wiltberger 
+           and R. E. Lopez and K. Papadopoulos",
   title = "An overview ofthe impact of the {J}an 10-11 1997 magnetic cloud on
   the magnetosphere via global {MHD} simulation",
   journal = GRL,
@@ -7773,7 +7800,8 @@ Lopez and K.
   year = 1998}
 
 @article{Goodrich:2004,
-  author = 	 {C.C. Goodrich and A.L. Sussman and J.G. Lyon and M.A. Shay and P.A. Cassak },
+  author = 	 {C. C. Goodrich and A. L. Sussman and J. G. Lyon and M. A. Shay 
+                  and P. A. Cassak},
   title = 	 {The {CISM} code coupling strategy},
   journal = 	 {J. Atmos. Sol.-Terr. Phys.},
   year = 	 {2004},
@@ -12136,6 +12164,14 @@ journal =  {J. Geophys. Res.},
    volumes = "submitted",
    year = 2004}
 
+@techreport{Lee:2004intercomm,
+   author = "J. Y. Lee and A. Sussman", 
+   title  = "Efficient communication between parallel programs with InterComm",
+   institution = "UMIACS",
+   number = "2004-04",
+   year   = "2004"
+}
+
 @article{Leer:1980,
   author = "E. Leer and T. E. Holzer",
   title = "Energy Addition in the Solar Wind",
@@ -15423,21 +15459,6 @@ booktitle = {ESA SP-506: Solar Variability: From Core to Outer Frontiers},
     month = dec,
     pages = {95}}
 
-@inproceedings{Odstrcil:2003,
-   author = {{Odstrcil}, D. and {Vandas}, M. and {Pizzo}, V.~J. and {MacNeice}, P.
-	},
-    title = "{Numerical Simulation of Interacting Magnetic Flux Ropes}",
-booktitle = {AIP Conf. Proc. 679: Solar Wind Ten},
-     year = 2003,
-    month = sep,
-    pages = {699-702}}
-@article{Odstrcil:1997,
-  author = "{Odstr\v{c}il} and M. Karlicky",
-  title = "Triggering of magnetic reconnection in the current sheet by shock waves",
-  journal = AA,
-  volume = 326,
-  pages = {1252-1258},
-  year = 1997}
 
 @article{Odstrcil:1999a,
   author = {{Odstr\v{c}il}, D. and {Pizzo}, V. J.},
@@ -15477,7 +15498,23 @@ booktitle = {AIP Conf. Proc. 679: Solar Wind Ten},
   pages = {766-776},
   year = 2000}
   
-@article{Odstrcil:2003,
+@inproceedings{Odstrcil:2003,
+   author = {{Odstrcil}, D. and {Vandas}, M. and {Pizzo}, V.~J. and {MacNeice}, P.
+	},
+    title = "{Numerical Simulation of Interacting Magnetic Flux Ropes}",
+booktitle = {AIP Conf. Proc. 679: Solar Wind Ten},
+     year = 2003,
+    month = sep,
+    pages = {699-702}}
+@article{Odstrcil:1997,
+  author = "{Odstr\v{c}il} and M. Karlicky",
+  title = "Triggering of magnetic reconnection in the current sheet by shock waves",
+  journal = AA,
+  volume = 326,
+  pages = {1252-1258},
+  year = 1997}
+
+@article{Odstrcil:2003enlil,
   author = "Odstrcil, D.", 
   title = "Modeling 3-D solar wind structures",
   journal = ASR,
@@ -16512,14 +16549,14 @@ eprint = {http://www.sciencemag.org/cgi/reprint/311/5766/1393.pdf}}
   year = 1996}
 
 @article{Powell:1999,
-		  AUTHOR = {K.G. Powell and P.L. Roe and T.J. Linde and
-                  T.I. Gombosi and D. L. {De Zeeuw}},
-		  TITLE = {A solution-adaptive upwind scheme for
-                  ideal magnetohydrodynamics},
-		  JOURNAL = {J. Comp. Phys.},
-		  VOLUME = {154},
-		  PAGES = {284-309},
-		  YEAR = {1999}}
+  AUTHOR = {K.G. Powell and P.L. Roe and T.J. Linde and
+  T.I. Gombosi and D. L. {De Zeeuw}},
+  TITLE = {A solution-adaptive upwind scheme for
+  ideal magnetohydrodynamics},
+  JOURNAL = {J. Comp. Phys.},
+  VOLUME = {154},
+  PAGES = {284-309},
+  YEAR = {1999}}
 
 @inproceedings{powell:2006,
    author = {{Powell}, K.~G. and {Gombosi}, T.~I. and {Stout}, Q.~F. and 
@@ -16690,6 +16727,18 @@ Goodrich and R.
    pages = "S08C03", 
    doi   = "10.1029/2004SW000123",
    year = 2005
+}
+
+@article{Pulkkinen:2009,
+  author = "A. Pulkkinen and M. Hesse and S. Habib and L. Van der Zel and B. Damsky and 
+            F. Policelli and D. Fugate and W. Jacobs and E. Creamer",
+  title  = "Solar shield: forecasting and mitigating space weather effects on 
+            high-voltage power transmission systems",
+  journal = "Natural Hazards",
+  volume  = 53,
+  pages   = "333-345",
+  doi     = "10.1007/s11069-009-9432-x",
+  year    = "2009"
 }
 
 @article{Pytte:1978,
@@ -20358,7 +20407,7 @@ consistent flux speed distribution",
 
 @incollection{Sokolov:2005,
   author = {I. V. Sokolov and T. I. Gombosi and A. J. Ridley},
-  title = {Non-potential electric field modfel of 
+  title = {Non-potential electric field model of 
            magnetosphere-ionosphere coupling},
   booktitle = "Inner Magnetosphere Interactions: New Perspectives from Imaging",
   editor = "J. Burch and M. Schulz and H. Spence",
@@ -21653,6 +21702,14 @@ C. Elphic and
  pages = {1159--1170},
  year = 1998}
 
+@article{Toth:1997,
+  title = "The LASY preprocessor and its application to Multidimensional Simulations",
+  author = "G. T\'oth",
+  journal = JCP,
+  volume = 138,
+  pages = "981--990",
+  year = 1997}
+
 @article{Toth:2000,
   author = "G. T\'oth",
   title = "The {$\nabla\cdot{\bf B}$} constraint in shock capturing
@@ -21678,17 +21735,6 @@ C. Elphic and
   volume = 182,
   pages = "346--354",
   year = 2002}
-
-@article{Toth:2003,
- author = "G. T\'oth and I. V. Sokolov and D. L. {De~Zeeuw} and T. I. Gombosi 
-           and K. C. Hansen and K. G. Powell and A. J. Ridley and P. L. Roe",
- title = "Divergence {{\bf B}} control and {MHD} solver effects in 
-          magnetospheric simulations",
- journal = JGR,
- volume = 00,
- pages = {00--00},
- note = "in preparation",
- year = 2003}
 
 @article{Toth:2004,
   author = "G. T{\'o}th and D. Kov{\'a}cs and K. C. Hansen and T. I. Gombosi",
@@ -22283,6 +22329,48 @@ solutions",
    volume = 415,
     pages = {755-761}}
 
+
+B. van der Holst, R. Keppens, and Z. Meliani, A multidimensional grid-adaptive
+relativistic magneto
+uid code, Comp. Phys. Comm. 179, 617 (2008).
+
+@article{vanderHolst:2007,
+  author  = "B. van der Holst and R. Keppens",
+  title   = "Hybrid block-AMR in cartesian and curvilinear coordinates: MHD applications", 
+  journal = JCP,
+  volume  = 226,
+  pages   = 925,
+  year    = 2007
+}
+
+@article{vanderHolst:2008,
+  author  = "B. van der Holst and R. Keppens and Z. Meliani",
+  title   = "A multidimensional grid-adaptive relativistic magnetofluid code", 
+  journal = JCP,
+  volume  = 179,
+  pages   = 617,
+  year    = 2008
+}
+
+@article{vanderVen:1997,
+  author="H. van der Ven and B.E. Niemann-Tuitman and A.E.P. Veldman",
+  title="An explicit multi-time-stepping algorithm for aerodynamic flows",
+  journal = "J. Comp. Appl. Math.",
+  volume = 82,
+  pages = 423,
+  year= 1997
+}
+
+@article{vanderVorst:1992,
+   author = "H. van der Vorst",
+   title  = "Bi-CGSTAB: A Fast and Smoothly Converging Variant of Bi-CG 
+             for the Solution of Nonsymmetric Linear Systems.", 
+   journal = "SIAM J. Sci. Statist. Comput.",
+   volume = 13,
+   pages  = "631-644", 
+   year   = 1992
+}
+
 @article{vanLeer:1973,
   author= "B. {van Leer}",
   title= "Towards the Ultimate Conservative Difference Scheme.
@@ -22711,7 +22799,6 @@ booktitle = {ESA SP-506: Solar Variability: From Core to Outer Frontiers},
   pages = 1392,
   year = 2003}
 
-
 @article{Waite:2006,
 author = {Waite, J. Hunter, Jr. and Combi, Michael R. and Ip, Wing-Huen and Cravens, Thomas E. and McNutt, Ralph L., Jr. and Kasprzak, Wayne and Yelle, Roger and Luhmann, Janet and Niemann, Hasso and Gell, David and Magee, Brian and Fletcher, Greg and Lunine, Jonathan and Tseng, Wei-Ling},
 title = {{Cassini Ion and Neutral Mass Spectrometer: Enceladus Plume Composition and Structure}},
@@ -22723,6 +22810,7 @@ doi = {10.1126/science.1121290},
 year = {2006},
 URL = {http://www.sciencemag.org/cgi/content/abstract/311/5766/1419},
 eprint = {http://www.sciencemag.org/cgi/reprint/311/5766/1419.pdf}}
+
 @article{Walker:1993,
   author = "R. J. Walker and T. Ogino and J. Raeder and M. {Ashour-Abdalla}",
   title = "A global magnetohydrodynamic simulation of the magnetosphere
