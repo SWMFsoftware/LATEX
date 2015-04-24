@@ -1,3 +1,7 @@
+This repository can be checked out like this:
+
+cvs -d USERNAME@herot.engin.umich.edu:/LATEX checkout LATEX
+
 This repository was created to share and merge existing LaTex related files.
 
 In particular it would be valuable to have an ever growing and up-to-date
