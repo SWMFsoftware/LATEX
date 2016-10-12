@@ -1,8 +1,11 @@
-This repository can be checked out like this:
+As long as CVSROOT is set to USERNAME@herot.engin.umich.edu:/CVS/FRAMEWORK
+this repository can be checked out as:
 
-cvs -d USERNAME@herot.engin.umich.edu:/LATEX checkout LATEX
+cvs co LATEX
 
 This repository was created to share and merge existing LaTex related files.
+
+##### csem.bib ###########
 
 In particular it would be valuable to have an ever growing and up-to-date
 BibTex file shared by the CSEM group. It should be fairly easy to add 
@@ -25,3 +28,18 @@ Step 3 is very essential to make sure that the merge was successful.
 The assumption is that if there is any overlap between the original csem.bib
 and NEW.bib then the NEW.bib file has the better/more up-to-date information. 
 If this is not the case, remove the overlapping items from NEW.bib
+
+##### TIGcommands.sty ###########
+
+Many useful definitions for formulas, like bold face for vectors (e.g. \bB)
+
+##### latexdiff ###########
+
+Create a difference between two latex files. Very useful for 
+manuscript revisions.
+
+##### l2hconf.pm ###########
+
+A modified version of the Perl module used by latex2html which produces
+high resolution fonts. Useful to create GIF files that can be pasted into
+talks and posters. However, the LatexIt utility is a much better alternative.
