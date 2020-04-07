@@ -1,8 +1,3 @@
-As long as CVSROOT is set to USERNAME@herot.engin.umich.edu:/CVS/FRAMEWORK
-this repository can be checked out as:
-
-cvs co LATEX
-
 This repository was created to share and merge existing LaTex related files.
 
 ##### csem.bib ###########
