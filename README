@@ -28,11 +28,6 @@ If this is not the case, remove the overlapping items from NEW.bib
 
 Many useful definitions for formulas, like bold face for vectors (e.g. \bB)
 
-##### latexdiff ###########
-
-Create a difference between two latex files. Very useful for 
-manuscript revisions.
-
 ##### l2hconf.pm ###########
 
 A modified version of the Perl module used by latex2html which produces
